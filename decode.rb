@@ -1,3 +1,5 @@
+require 'pry'
+
 MORSE_CODE = {
   '.-' => 'A',
   '-...' => 'B',
@@ -50,3 +52,5 @@ def decode(morse)
 end
 
 decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+
+binding.pry
