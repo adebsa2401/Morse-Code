@@ -1,5 +1,5 @@
 MORSE_CODE = {
-  '.|-' => 'A',
+  '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
   '-..' => 'D',
@@ -42,7 +42,7 @@ def decode_char(morse)
 end
 
 def decode_word(morse)
-  morse.split.map { |char| decode_char(char) }.join
+  morse.split.map { decode_char }.join
 end
 
 def decode(morse)
